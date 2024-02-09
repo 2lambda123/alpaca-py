@@ -546,8 +546,7 @@ class CreateBankRequest(NonEmptyRequest):
             "street_address",
         ]
 
-        bank_code_type = values["bank_code_type"]
-        if bank_code_type == IdentifierType.ABA:
+        if (bank_code_type := values["bank_code_type"]) == IdentifierType.ABA:
             for international_param in international_parameters:
                 if (
                     international_param in values

@@ -369,9 +369,8 @@ class CryptoHistoricalDataClient(RESTClient):
             if actual_limit:
                 total_items += actual_limit
 
-            page_token = response.get("next_page_token", None)
 
-            if page_token is None:
+            if (page_token := response.get("next_page_token", None)) is None:
                 break
 
         # users receive Type dict

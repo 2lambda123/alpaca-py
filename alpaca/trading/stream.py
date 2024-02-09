@@ -83,8 +83,7 @@ class TradingStream:
         Args:
             msg (Dict): The message from the websocket connection
         """
-        stream = msg.get("stream")
-        if stream == "trade_updates":
+        if (stream := msg.get("stream")) == "trade_updates":
             if self._trade_updates_handler:
                 await self._trade_updates_handler(self._cast(msg))
 
