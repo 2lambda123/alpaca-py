@@ -27,7 +27,7 @@
 
 ## About <a name="about"></a>
 
-Alpaca-py provides an interface for interacting with the API products Alpaca offers. These API products are provided as various REST, WebSocket and SSE endpoints that allow you to do everything from streaming market data to creating your own investment apps. 
+Alpaca-py provides an interface for interacting with the API products Alpaca offers. These API products are provided as various REST, WebSocket and SSE endpoints that allow you to do everything from streaming market data to creating your own investment apps.
 
 Learn more about the API products Alpaca offers at https://alpaca.markets.
 
@@ -65,9 +65,9 @@ If you’ve used the previous python SDK alpaca-trade-api, there are a few key d
 Alpaca-py lets you use Broker API to start building your investment apps! Learn more at the [Broker](https://docs.alpaca.markets/docs/broker-api) page.
 
 ### OOP Design <a name="oop-design"></a>
-Alpaca-py uses a more OOP approach to submitting requests compared to the previous SDK. To submit a request, you will most likely need to create a request object containing the desired request data. Generally, there is a unique request model for each method. 
+Alpaca-py uses a more OOP approach to submitting requests compared to the previous SDK. To submit a request, you will most likely need to create a request object containing the desired request data. Generally, there is a unique request model for each method.
 
-Some examples of request models corresponding to methods: 
+Some examples of request models corresponding to methods:
 
 * ``GetOrdersRequest`` for ``TradingClient.get_orders()``
 * ``CryptoLatestOrderbookRequest`` for ``CryptoHistoricalDataClient.get_crypto_latest_orderbook()``

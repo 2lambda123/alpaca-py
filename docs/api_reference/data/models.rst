@@ -87,4 +87,3 @@ Movers
 ------
 
 .. autoclass:: alpaca.data.models.screener.Movers
-

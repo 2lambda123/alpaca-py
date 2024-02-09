@@ -10,5 +10,3 @@ Market Data Reference
    data/timeframe
    data/models
    data/enums
-
-   
